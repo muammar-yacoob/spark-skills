@@ -13,10 +13,26 @@ catalogue, coupons and customer records.
 ```json
 {
   "mcpServers": {
-    "spark-pay": { "type": "http", "url": "https://sparkpay.dev/api/mcp/mcp" }
+    "spark-pay": {
+      "type": "http",
+      "url": "https://sparkpay.dev/api/mcp/mcp",
+      "headers": { "Authorization": "Bearer ${SPARK_PAY_ADMIN_TOKEN}" }
+    }
   }
 }
 ```
+
+**This server is for the account owner.** Payment data is admin-only, so every
+tool call is gated behind the account's admin bearer; without it the handshake
+and the tool list still answer, and the first real call returns
+`invalid_token`. There is no per-customer key to request, which is worth
+knowing before spending time on the handshake: a tool list that renders is not
+evidence of access.
+
+If the goal is to *add* paid plans to an app rather than to operate an account
+that already has them, none of this is needed. Use the
+`add-payments-to-an-app` skill, which goes through the dashboard and the
+integration kit and requires no credential.
 
 ## Reading the state
 

@@ -1,0 +1,14 @@
+{
+  "name": "spark-skills",
+  "owner": {
+    "name": "Spark Games Ltd",
+    "url": "https://sparkpay.dev"
+  },
+  "plugins": [
+    {
+      "name": "spark-skills",
+      "source": "./"
+    }
+  ],
+  "description": "Skills for the part of shipping that starts after the code works: billing and pricing pages, transactional email, demo videos, social scheduling, directory visibility, UK micro-entity accounts, and knowledge graphs."
+}
