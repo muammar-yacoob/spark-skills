@@ -29,13 +29,11 @@ start Claude Code with `claude --plugin-dir ./spark-skills`.
 | [`viralcat-social-scheduling`](skills/viralcat-social-scheduling/) | Scheduling social posts, diagnosing failed publishes, and reading back performance. |
 | [`sellular-directory-visibility`](skills/sellular-directory-visibility/) | SEO audits, visibility scoring and directory submission kits. |
 | [`ducktax-uk-micro-accounts`](skills/ducktax-uk-micro-accounts/) | UK micro-entity company accounts: validate a balance sheet from raw figures, read Companies House deadlines, categorise bank transactions, and check whether a free filing extension is still available. |
-| [`graphify`](skills/graphify/) | Turns a folder of code, documents, papers or media into a navigable knowledge graph, with community detection and query, path and explain tools. Outputs interactive HTML, GraphRAG-ready JSON and a plain-language report. |
 
 ## What these are and are not
 
-`graphify` and `add-payments-to-an-app` stand on their own. `graphify` is a
-tool; the payments skill is a walkthrough that needs nothing but a browser and
-the app you already have.
+`add-payments-to-an-app` stands on its own: a walkthrough that needs nothing
+but a browser and the app you already have.
 
 The rest are interfaces to hosted services and are most useful if you use those
 services. Each one names the credential it needs at the top, and some are
