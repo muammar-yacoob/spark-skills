@@ -17,7 +17,10 @@ QuickPeek runs as a local MCP server. Install it, then point your agent at it:
 ```json
 {
   "mcpServers": {
-    "quickpeek": { "command": "npx", "args": ["-y", "quickpeek", "mcp"] }
+    "quickpeek": {
+      "command": "npx",
+      "args": ["-y", "--ignore-scripts", "--package=@spark-apps/quickpeek", "quickpeek-mcp"]
+    }
   }
 }
 ```
