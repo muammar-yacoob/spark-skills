@@ -35,6 +35,28 @@ start Claude Code with `claude --plugin-dir ./spark-skills`.
 `add-payments-to-an-app` stands on its own: a walkthrough that needs nothing
 but a browser and the app you already have.
 
+## Where each skill sends data
+
+Nothing here declares an MCP server of its own. Each skill tells you how to
+connect one yourself, and names the credential it needs at the top. These are
+the only hosts any skill talks to, all operated by Spark Games Ltd except the
+last, which runs on your own machine:
+
+| Skill | Host |
+|---|---|
+| `add-payments-to-an-app` | `sparkpay.dev` |
+| `sparkpay-saas-billing` | `sparkpay.dev` |
+| `bottled-transactional-email` | `bottled.email` |
+| `sellular-directory-visibility` | `sellular.online` |
+| `viralcat-social-scheduling` | `viral-cat.com` |
+| `ducktax-uk-micro-accounts` | `ducktax.com` |
+| `quickpeek-demo-videos` | local only, over stdio — `@spark-apps/quickpeek` on npm |
+
+Data reaching those hosts is read and written under your own account with each
+service and is retained there until you delete it, per each service's privacy
+policy. Nothing in this repository contains a credential, and no skill sends
+data anywhere else.
+
 The rest are interfaces to hosted services and are most useful if you use those
 services. Each one names the credential it needs at the top, and some are
 scoped to the account owner rather than to customers — the skill says so where
