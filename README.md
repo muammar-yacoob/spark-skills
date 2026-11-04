@@ -67,6 +67,11 @@ having either way: which call order avoids a silent failure, which settings look
 configured but do nothing, which "success" response does not mean the thing
 actually worked.
 
+## Privacy
+
+The plugin collects nothing. See [PRIVACY.md](PRIVACY.md) for what each skill
+sends where, and to whose policy it is subject.
+
 ## Licence
 
 MIT. See [LICENSE](LICENSE).

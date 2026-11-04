@@ -1,7 +1,7 @@
 {
   "name": "spark-skills",
   "displayName": "Spark Skills",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Ship the parts of a product that come after the code works: billing and a pricing page, transactional email from your own domain, demo videos, social scheduling, directory visibility, UK micro-entity accounts.",
   "author": {
     "name": "Spark Games Ltd",
@@ -23,6 +23,6 @@
   ],
   "documentationUrl": "https://sparkpay.dev/docs",
   "supportUrl": "https://github.com/muammar-yacoob/spark-skills/issues",
-  "privacyPolicyUrl": "https://sparkpay.dev/privacy",
+  "privacyPolicyUrl": "https://github.com/muammar-yacoob/spark-skills/blob/main/PRIVACY.md",
   "termsOfServiceUrl": "https://sparkpay.dev/terms"
 }
